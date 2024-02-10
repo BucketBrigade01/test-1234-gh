@@ -35,6 +35,7 @@ h1 {
 h2 {
     font-size: 2rem;
     color: #222222;
+    text-align: center;
 }
 
 h3 {
@@ -93,9 +94,7 @@ h1 {
     margin: 0 auto;
     padding: 8px;
 }
-#description {
-    width: 50%;
-}
+
 #team {
     width: 100%;
 }
@@ -103,89 +102,31 @@ h1 {
     border-radius: 5px;
     width: 100%;
 }
-@media screen and (min-width: 576px) {
-    html {
-        font-size: 16px;
-    }
-    #logo {
-        display: block;
-    }
-    #logo {
-        height: 30px;
-    }
-    #logo2 {
-        display: none;
-    }
-    #banner {
-        height: 220px;
-    }
-    h1 {
-        margin: 16px 0;
-    }
-}
-@media screen and (min-width: 768px) {
-    #banner {
-        height: 250px;
-    }
-    h1 {
-        margin: 20px 0;
-    }
-    #about {
-        max-width: 800px;
-        flex-direction: row;
-    }
-    #description {
-        width: 50%;
-        padding-right: 8px;
-    }
-    #team {
-        width: 50%;
-    }
-
-@media screen and (min-width: 992px) {
-    #banner {
-        height: 300px;
-    }
-}
-
-@media screen and (min-width: 1200px) {}
-
-/*
-
-
-
-
-
-h2 {
-    text-align: center;
-}
 #jobs {
-    max-width: 800px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 0 8px;
 }
 #jobs-table {
-    width: 100%;
-    border: 1px solid lightblue;
-    border-collapse: collapse;
+    display: none;
 }
-.jobs-header-row th {
-    border: 1px solid lightblue;
+.job {
+    border: 1px solid lightgray;
+    margin-top: 8px;
+    border-radius: 5px;
     padding: 8px;
-    background-color: #DBEAFE;
-    text-align: center;
+}
+.job-title {
+    font-size: 1.25rem;
+    font-weight: 500;
     color: #222222;
 }
-.jobs-data-row td {
-    border: 1px solid lightblue;
-    padding: 8px; 
+.job-detail {
+    margin-top: 4px;
+    color: #444444;
 }
-#jobs-table tr:nth-child(odd) {
-    background-color: #EFF6FF;
-}
-
 #application {
-    max-width: 800px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 0 8px;
 }
@@ -213,13 +154,13 @@ h2 {
     font-weight: 600;
 }
 #application-form input, select, textarea{
+    width: 90%;
     padding: 8px;
     font: 1.25rem;
     margin-top: 4px;
     border-radius: 5px;
     border: 1px solid #71717A;
 }
-
 #footer {
     background-color: #F8FAFC;
     padding: 8px;
@@ -228,13 +169,102 @@ h2 {
 }
 #footer-links {
     list-style: none;
+    padding-left: 0;
 }
 #footer-links li {
-    display: inline;
-    margin: 0 8px;
+    display: column;
+    margin: 8px 16px;
 }
 #cpywrt {
     color: #71717A;
     font-size: 0.875rem;
 }
-*/
+@media screen and (min-width: 576px) {
+    html {
+        font-size: 16px;
+    }
+    #logo {
+        display: block;
+    }
+    #logo {
+        height: 30px;
+    }
+    #logo2 {
+        display: none;
+    }
+    #banner {
+        height: 220px;
+    }
+    h1 {
+        margin: 16px 0;
+    }
+    #application-form input, select {
+        width: auto;
+    }
+    #application-form textarea {
+        width: 80%;
+    }
+    #footer-links li {
+        display: inline;
+    }
+}
+@media screen and (min-width: 768px) {
+    #banner {
+        height: 250px;
+    }
+    h1 {
+        margin: 20px 0;
+    }
+    #about {
+        max-width: 800px;
+        flex-direction: row;
+    }
+    #description {
+        width: 50%;
+        padding-right: 8px;
+    }
+    #application {
+        max-width: 800px;
+    }
+    #team {
+        width: 50%;
+    }
+    #jobs {
+        min-width: 800px;
+    }
+    #jobs-table {
+        width: 100%;
+        border: 1px solid lightblue;
+        border-collapse: collapse;
+    }
+    .jobs-header-row th {
+        border: 1px solid lightblue;
+        padding: 8px;
+        background-color: #DBEAFE;
+        text-align: center;
+        color: #222222;
+    }
+    .jobs-data-row td {
+        border: 1px solid lightblue;
+        padding: 8px; 
+    }
+    #jobs-table tr:nth-child(odd) {
+        background-color: #EFF6FF;
+    }
+    #jobs-table {
+        display: table;
+        width: 100%;
+        border: 1px solid lightskyblue;
+        border-collapse: collapse;
+    }   
+    #jobs-list {
+        display: none;
+    }
+
+@media screen and (min-width: 992px) {
+    #banner {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 1200px) {}

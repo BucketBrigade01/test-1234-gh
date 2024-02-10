@@ -4,8 +4,10 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,900&display=swap"
+        rel="stylesheet">
+
     <title>
         My First Webpage
     </title>
@@ -61,40 +63,66 @@
             </tr>
             <tr class="jobs-data-row">
                 <td>Frontend Developer</td>
-                <td>Victoria BC</td>
-                <td>Canada</td>
-                <td>$100,000 Anualy</td>
-                <td>Feb 3, 2024</td>
+                <td>Bengaluru</td>
+                <td>India</td>
+                <td>₹12,00,000</td>
+                <td>Mar 3, 2023</td>
             </tr>
             <tr class="jobs-data-row">
-                <td>Backend Developer</td>
-                <td>Vancouver BC</td>
-                <td>Canada</td>
-                <td>$120,000 Anualy</td>
-                <td>Jan 21 2024</td>
+                <td>Full Stack Developer</td>
+                <td>New Delhi</td>
+                <td>India</td>
+                <td>₹15,00,000</td>
+                <td>Feb 1, 2023</td>
             </tr>
             <tr class="jobs-data-row">
                 <td>Data Scientist</td>
-                <td>Sidney BC</td>
-                <td>Canada</td>
-                <td>$90,000 Anualy</td>
-                <td>Jan 3 2024</td>
+                <td>San Francisco</td>
+                <td>USA</td>
+                <td>$175,000</td>
+                <td>Dec 22, 2022</td>
             </tr>
             <tr class="jobs-data-row">
-                <td>Full-Stack Developer</td>
+                <td>ML Engineer</td>
                 <td colspan="2">Remote</td>
-                <td>$70,000 Anualy</td>
-                <td>Dec 21, 2023</td>
+                <td>$80,000</td>
+                <td>Sep 19, 2022</td>
             </tr>
         </table>
+        <div id="jobs-list">
+            <div class="job">
+                <div class="job-title">Frontend Developer</div>
+                <div class="job-detail">Bengaluru, India</div>
+                <div class="job-detail">₹ 12,00,000</div>
+                <div class="job-detail">Posted Mar 3, 2023</div>
+            </div>
+            <div class="job">
+                <div class="job-title">Full Stack Developer</div>
+                <div class="job-detail">New Delhi, India</div>
+                <div class="job-detail">₹ 15,00,000</div>
+                <div class="job-detail">Posted Feb 1, 2023</div>
+            </div>
+            <div class="job">
+                <div class="job-title">Data Scientist</div>
+                <div class="job-detail">San Francisco, USA</div>
+                <div class="job-detail">$175,000</div>
+                <div class="job-detail">Posted Dec 22, 2022</div>
+            </div>
+            <div class="job">
+                <div class="job-title">ML Engineer</div>
+                <div class="job-detail">Remote</div>
+                <div class="job-detail">$80,000</div>
+                <div class="job-detail">Posted Sep 19, 2022</div>
+            </div>
+        </div>
     </div>
     <div id="application">
         <h2>Submit Your Application</h2>
         <form action="https://formbold.com/s/9mQll" method="post" id="application-form" enctype="multipart/form-data">
             <div class="form-group">
-                <label for="name" >Full Name</label><br>
+                <label for="name">Full Name</label><br>
                 <input type="text" id="name" name="Full Name" required placeholder="First Last">
-            </div >
+            </div>
             <div class="form-group">
                 <label for="email">Email</label><br>
                 <input type="email" id="email" name="Email Adress" required placeholder="something@email.com">
@@ -129,12 +157,12 @@
                 <label for="terms">
                     <input type="checkbox" id="terms" name="terms" required>
                     I agree to the terms and conditions
-                </label>   
+                </label>
             </div>
             <div class="form-group">
                 <input type="submit" value="Submit Application">
             </div>
-        </form>   
+        </form>
     </div>
     <div id="footer">
         <ul id="footer-links">
